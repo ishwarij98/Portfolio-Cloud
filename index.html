@@ -1,13 +1,233 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ishwari Jamodkar — Resume</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Compact font sizes */
+    body {
+      font-size: 0.85rem;
+    }
+
+    h1 {
+      font-size: 1.5rem !important;
+    }
+
+    h2 {
+      font-size: 1.05rem !important;
+    }
+
+    h3 {
+      font-size: 0.9rem !important;
+    }
+
+    p,
+    li {
+      font-size: 0.82rem !important;
+    }
+
+    @media print {
+      a[href]:after {
+        content: "";
+      }
+
+      .no-print {
+        display: none !important;
+      }
+
+      body {
+        color: #000;
+        font-size: 0.8rem;
+      }
+
+      .container {
+        max-width: none;
+        padding: 0;
+      }
+    }
+  </style>
+</head>
+
+<body class="bg-white text-neutral-900 antialiased">
+  <main class="container mx-auto px-4 py-8 max-w-4xl">
+    <!-- Header -->
+    <header
+      class="flex flex-col gap-3 sm:flex-row sm:items-start sm:justify-between border-b border-neutral-200 pb-5">
+      <div>
+        <h1 class="font-semibold tracking-tight">Ishwari Jamodkar</h1>
+        <p class="mt-1 text-xs">Nagpur, Maharashtra, India</p>
+      </div>
+      <ul class="text-xs space-y-1">
+        <li><a class="underline hover:no-underline"
+            href="tel:+919518966139">+91 95189 66139</a></li>
+        <li><a class="underline hover:no-underline"
+            href="mailto:ishwarijamodkar08@gmail.com">ishwarijamodkar08@gmail.com</a></li>
+        <li><a class="underline hover:no-underline" href="https://ishwari.online" target="_blank"
+            rel="noreferrer">ishwari.online</a></li>
+        <li class="flex gap-2 flex-wrap">
+          <a class="underline hover:no-underline" href="https://github.com/ishwarij98" target="_blank"
+            rel="noreferrer">github.com/ishwarij98</a>
+          <span aria-hidden>•</span>
+          <a class="underline hover:no-underline"
+            href="https://www.linkedin.com/in/ishwarijamodkar08ij/" target="_blank"
+            rel="noreferrer">linkedin.com/in/ishwarijamodkar08ij</a>
+        </li>
+      </ul>
+    </header>
+
+    <!-- 1. Objective -->
+    <section class="mt-6">
+      <h2 class="font-semibold tracking-tight">Objective</h2>
+      <p class="mt-2 leading-relaxed">
+        Detail-oriented MERN stack developer passionate about learning, problem-solving, and building user-focused
+        applications.
+        Eager to grow skills, contribute to impactful projects, and collaborate in innovative environments.
+      </p>
+    </section>
+
+    <!-- 2. Skills -->
+    <section class="mt-6">
+      <h2 class="font-semibold tracking-tight">Skills</h2>
+      <div class="mt-2 grid sm:grid-cols-2 gap-3">
+        <div class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="text-xs font-medium">Frontend & Languages</h3>
+          <p class="mt-1">JavaScript, TypeScript, Python, HTML5, CSS3, Tailwind CSS, Styled Components, React, React
+            Native, Next.js</p>
+        </div>
+        <div class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="text-xs font-medium">Backend</h3>
+          <p class="mt-1">Node.js, Express.js, FastAPI, MongoDB, Firebase</p>
+        </div>
+        <div class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="text-xs font-medium">Tools & Platforms</h3>
+          <p class="mt-1">Git, VS Code, Nginx, Docker</p>
+        </div>
+        <div class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="text-xs font-medium">Technologies</h3>
+          <p class="mt-1">LangChain.js, DataStax Astra DB, Cloud Deployments</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Work Experience -->
+    <section class="mt-6">
+      <h2 class="font-semibold tracking-tight">Work Experience</h2>
+      <article class="border border-neutral-200 rounded-lg p-3">
+        <div class="flex items-center justify-between gap-4">
+          <h3 class="font-medium">Mobile App Developer (iOS/Android) — Sphinx Solutions, Pune, MH</h3>
+          <span class="text-[0.7rem] whitespace-nowrap">Jul 2023 – Mar 2024</span>
+        </div>
+        <ul class="mt-2 list-disc list-inside space-y-1">
+          <li>Built <strong>Archive Intel</strong>, secure compliance chat app with real-time messaging and notifications
+            using Firebase.</li>
+          <li>Engineered Java–React Native bridge for seamless cross-platform functionality and performance.</li>
+          <li>Developed key modules for Loan Management and Matrimonial Apps, including auth and dashboards.</li>
+          <li>Collaborated with designers, engineers, and QA to deliver scalable, client-aligned projects within
+            deadlines.</li>
+          <li>Enhanced UX through best practices in state management, APIs, debugging, and optimization.</li>
+        </ul>
+      </article>
+    </section>
+
+    <!-- 4. Education -->
+    <section class="mt-6">
+      <h2 class="font-semibold tracking-tight">Education</h2>
+      <div class="mt-2 grid gap-3">
+        <article class="border border-neutral-200 rounded-lg p-3">
+          <div class="flex items-center justify-between gap-4">
+            <h3 class="font-medium">B.E. in Electronics and Telecommunications — St. Vincent Pallotti College of Engg. &
+              Tech</h3>
+            <span class="text-[0.7rem] whitespace-nowrap">2016 – 2020</span>
+          </div>
+          <p class="mt-1 text-xs">Nagpur, Maharashtra, India</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- 5. Projects -->
+    <section class="mt-6">
+      <h2 class="font-semibold tracking-tight">Projects</h2>
+      <div class="mt-2 grid gap-3">
+
+        <!-- RAG Chatbot -->
+        <article class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="font-medium">RAG Chatbot with LangChain.js (RAG-Chatbot 2)</h3>
+          <p class="mt-1 text-xs">LangChain.js, OpenAI, Next.js, DataStax Astra DB, DigitalOcean</p>
+          <ul class="mt-2 list-disc list-inside space-y-1">
+            <li>Built Retrieval-Augmented Generation chatbot using LangChain.js, OpenAI APIs, and Next.js frontend.</li>
+            <li>Integrated DataStax Astra DB for efficient vector search and seamless large-scale data handling.</li>
+            <li>Deployed on Digital Ocean cloud platform ensuring high availability, reliability, and scalability.</li>
+          </ul>
+        </article>
+
+        <!-- Session Notes -->
+        <article class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="font-medium">Session Notes (Session Notes 2)</h3>
+          <p class="mt-1 text-xs">Node.js, Express, MongoDB</p>
+          <ul class="mt-2 list-disc list-inside space-y-1">
+            <li>Built a secure Notes SaaS backend using Node.js, Express, and MongoDB with RESTful APIs.</li>
+            <li>Implemented session-based authentication with hashed passwords, access control, and route protection.
+            </li>
+            <li>Developed complete CRUD operations for personal notes with data validation and user-based access.</li>
+          </ul>
+        </article>
+
+        <!-- Clinic Front-Desk -->
+        <article class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="font-medium">Clinic Front-Desk System (Front-Desk System 2)</h3>
+          <p class="mt-1 text-xs">Next.js, React, NestJS, TypeORM, MySQL, JWT</p>
+          <ul class="mt-2 list-disc list-inside space-y-1">
+            <li>Built secure full-stack app with Next.js, React, NestJS, TypeORM, and MySQL using JWT authentication.
+            </li>
+            <li>Developed real-time dashboard for queue and appointment management with dynamic doctor profiles.</li>
+            <li>Added interactive scheduling modals for CRUD operations, streamlining workflow and improving UX.</li>
+          </ul>
+        </article>
+
+        <!-- Food Delivery -->
+        <article class="border border-neutral-200 rounded-lg p-3">
+          <h3 class="font-medium">Food Delivery Application (FoodDeliveryApp 2)</h3>
+          <p class="mt-1 text-xs">React, Tailwind CSS, Node.js, Express, MongoDB</p>
+          <ul class="mt-2 list-disc list-inside space-y-1">
+            <li>Developed a scalable food delivery application with product menus and seamless order management.</li>
+            <li>Designed responsive UI using React and Tailwind CSS; backend powered by Node.js, Express, and MongoDB.
+            </li>
+            <li>Added dynamic restaurant and food listings, enabling instant menu changes and improved engagement.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- 6. Certifications -->
+    <section class="mt-6">
+      <h2 class="font-semibold tracking-tight">Certifications</h2>
+      <div class="mt-2 grid gap-3">
+        <article class="border border-neutral-200 rounded-lg p-3 flex items-center justify-between">
+          <h3 class="font-medium">Post Graduate Diploma in Mobile Computing — CDAC, Pune</h3>
+          <span class="text-[0.7rem] whitespace-nowrap">Sept 2022 – Mar 2023</span>
+        </article>
+        <article class="border border-neutral-200 rounded-lg p-3 flex items-center justify-between">
+          <h3 class="font-medium">Full Stack Development Bootcamp — The Hacking School, Hyderabad</h3>
+          <span class="text-[0.7rem] whitespace-nowrap">Mar 2025 – Aug 2025</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- 7. Footer -->
+    <footer
+      class="mt-8 pt-4 border-t border-neutral-200 text-xs flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
+      <p>Open to Software Engineering / Full-Stack roles.</p>
+      <div class="flex gap-3">
+        <a class="underline hover:no-underline"
+          href="mailto:ishwarijamodkar08@gmail.com">Email Me</a>
+        <a class="underline hover:no-underline" href="#" onclick="window.print(); return false;">Print</a>
+        <a class="underline hover:no-underline" href="Resume_Ishwari_Jamodkar.pdf" download>Download PDF</a>
+      </div>
+    </footer>
+  </main>
+</body>
+
 </html>
